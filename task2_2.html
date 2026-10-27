@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №1. JavaScript</title>
+    <link rel="stylesheet" href="stylejs.css">
+    <script src="task2_2.js" defer></script>
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №1. JavaScript</h1>
+            <h2>Виконала студентка групи КН-31, Станкевич Катерина</h2>
+        </header>
+        <nav class="b-nav">
+            <a href="index.html">Завдання 1</a>
+            <a href="task2_1.html">Завдання 2.1</a>
+            <a href="task2_2.html">Завдання 2.2</a>
+        </nav>
+        <section class="b-section">
+            <h2>Завдання 2.2. Варіант 6</h2>
+            <div class="b-task">
+                Дана таблиця з числами. При натисканні на кнопку
+                необхідно виокремити кольорами всі додатні
+                та від'ємні числа. Окремо позначити максимальні
+                та мінімальні значення серед додатних та від'ємних.
+            </div>
+            <h2>Таблиця чисел</h2>
+            <table id="table" class="b-table">
+                <tr>
+                    <td>12</td><td>-5</td><td>8</td><td>-20</td>
+                </tr>
+                <tr>
+                    <td>-3</td><td>25</td><td>-14</td><td>6</td>
+                </tr>
+                <tr>
+                    <td>18</td><td>-9</td><td>2</td><td>-1</td>
+                </tr>
+                <tr>
+                    <td>-30</td><td>11</td><td>-7</td><td>40</td>
+                </tr>
+            </table>
+            <button class="b-button" onclick="tableObrab()">Перевірити таблицю</button>
+            <h2>Результат</h2>
+            <div id="result"></div>
+        </section>
+    </main>
+</body>
+</html>
