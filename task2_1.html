@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №1. JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="stylejs.css">
+    <script src="task2_1.js" defer></script>
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №1. JavaScript</h1>
+            <h2>Виконала студентка групи КН-31, Станкевич Катерина</h2>
+        </header>
+        <nav class="b-nav">
+            <a href="lr1js.html">Завдання 1</a>
+            <a href="task2_1.html">Завдання 2.1</a>
+            <a href="task2_2.html">Завдання 2.2</a>
+        </nav>
+        <section class="b-section">
+            <h2>Завдання 2.1. Варіант 9</h2>
+            <div class="b-task">
+                У формі є список фруктів та поле для введення
+                їх вартості. Після натискання Enter при введенні
+                вартості сформувати список, в якому зазначена
+                назва фрукту та його вартість.
+            </div>
+            <h2>Введення даних</h2>
+            <label for="fruit">Оберіть фрукт:</label>
+            <select id="fruit">
+                <option value="Яблуко">Яблуко</option>
+                <option value="Банан">Банан</option>
+                <option value="Апельсин">Апельсин</option>
+                <option value="Груша">Груша</option>
+                <option value="Ківі">Ківі</option>
+            </select>
+            <br><br>
+            <label for="price">Вартість:</label>
+            <input type="number" id="price" min="0" step="0.01"
+                   placeholder="Введіть ціну"
+                   onkeydown="addFruit(event)">
+            <h2>Результат</h2>
+            <ul id="result"></ul>
+        </section>
+    </main>
+</body>
+</html>
